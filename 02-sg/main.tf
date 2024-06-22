@@ -132,7 +132,7 @@ resource "aws_security_group_rule" "backend_bastion" {
   source_security_group_id = module.bastion.sg_id
   security_group_id = module.backend.sg_id
 }
-
+#added as part of jenkins CI-CD
 resource "aws_security_group_rule" "backend_default_vpc" {
   type              = "ingress"
   from_port         = 22
