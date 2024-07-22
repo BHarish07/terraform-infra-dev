@@ -1,5 +1,5 @@
 module "db" {
-  source = "git::https://github.com/daws-78s/terraform-aws-securitygroup.git?ref=main"
+  source = "git::https://github.com/BHarish07/terraform-aws-securitygroup.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = var.db_sg_description
@@ -8,7 +8,7 @@ module "db" {
   sg_name = "db"
 }
 module "backend" {
-  source = "git::https://github.com/daws-78s/terraform-aws-securitygroup.git?ref=main"
+  source = "git::https://github.com/BHarish07/terraform-aws-securitygroup.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = var.backend_sg_description
@@ -18,7 +18,7 @@ module "backend" {
 }
 
 module "frontend" {
-  source = "git::https://github.com/daws-78s/terraform-aws-securitygroup.git?ref=main"
+  source = "git::https://github.com/BHarish07/terraform-aws-securitygroup.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = var.frontend_sg_description
@@ -28,7 +28,7 @@ module "frontend" {
 }
 
 module "bastion" {
-  source = "git::https://github.com/daws-78s/terraform-aws-securitygroup.git?ref=main"
+  source = "git::https://github.com/BHarish07/terraform-aws-securitygroup.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = var.bastion_sg_description
@@ -39,7 +39,7 @@ module "bastion" {
  
 
 module "app_alb" {
-  source = "git::https://github.com/daws-78s/terraform-aws-securitygroup.git?ref=main"
+  source = "git::https://github.com/BHarish07/terraform-aws-securitygroup.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = var.app_alb_sg_description
@@ -49,7 +49,7 @@ module "app_alb" {
 }
  
  module "vpn" {
-  source = "git::https://github.com/daws-78s/terraform-aws-securitygroup.git?ref=main"
+  source = "git::https://github.com/BHarish07/terraform-aws-securitygroup.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = var.vpn_sg_description
